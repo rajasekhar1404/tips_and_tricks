@@ -1,0 +1,11 @@
+Here is the fastest way to copy all the URL's and the titles of a YouTube channel or a playlist.
+open the channel or playlist you want to copy the names from.
+right click on the screen, select inspect.
+then click on console option which is right to Elements.
+then refresh your page to remove if any caches are there.
+copy the below code at in the bottom of the console page.
+var scroll = setInterval(function(){ window.scrollBy(0, 1000)}, 1000);
+then copy the below code and paste at the bottom.
+window.clearInterval(scroll); console.clear(); urls = $$('a'); urls.forEach(function(v,i,a){if (v.id=="video-title"){console.log('\t'+v.title+'\t'+v.href+'\t')}});
+now you can see all the list of the video titles and the url's of the videos,
+just select all those titles and url's by pressing ctrl + A, then paste them to your spreadsheet or excel sheet.
