@@ -1,0 +1,13 @@
+First we need to install ffmpeg to start this process.
+downlaod ffmpeg from here: https://www.ffmpeg.org/
+extract the zip file in programs files folder..
+open the bin folder, copy the path of bin folder.
+goto the environment variables, create a new path, paste the copied path of bin directory save the path.
+now open the CMD in the required folder.
+check whether ffmpeg is working or not by giving command "ffmpeg".
+Here is the command for merging audio with video: ffmpeg -i video.mp4 -i audio.wav -c:v copy -c:a aac output.mp4
+replace the video.mp4 with your video file, make sure your file don't have any spaces.
+replace the audio.wav with your audio file.
+replace the output.mp4 with the name you want to give to your output file.
+hit enter,
+it will merge the audio and video in seconds.
