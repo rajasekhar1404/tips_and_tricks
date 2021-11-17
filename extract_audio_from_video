@@ -4,3 +4,6 @@ copy and change the video file name from below command.
 ffmpeg -i input-video.avi -vn -acodec copy output-audio.aac
 hit enter,
 a new audio file with the given name will be created in that folder.
+
+also you can remove the audio from a video using below command
+ffmpeg -i test.mp4 -vcodec copy -an test1.mp4
