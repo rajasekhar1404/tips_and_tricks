@@ -1,0 +1,6 @@
+extract the audio quickly from video using ffmpeg.
+open the command prompt in the same folder of the video.
+copy and change the video file name from below command.
+ffmpeg -i input-video.avi -vn -acodec copy output-audio.aac
+hit enter,
+a new audio file with the given name will be created in that folder.
